@@ -39,7 +39,7 @@ class Server:
         return self.__indexed_dataset
 
     def get_hyper_index(
-        self, index: Optional[int] = None, page_size: int = 10
+        self, index: int = None, page_size: int = 10
     ) -> Dict:
         """A get method that retains the ordering of the data even when
         some modifications such as deletion are made on the existing data.
